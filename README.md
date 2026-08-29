@@ -34,7 +34,11 @@ Totals: 14 applications · 5 open · 3 rejected
 ```
 
 Everything is action-only and time-aware: a call earlier today won't show as "upcoming," and
-rejections are never rehashed. If nothing needs you, it simply says so.
+rejections are never rehashed. And on a quiet day it doesn't pad the brief — it just says:
+
+```text
+nothing needs action right now.
+```
 
 ## What it deliberately does NOT do
 It only sees **email and calendar.** It cannot read **LinkedIn messages, WhatsApp, or application portals** — those are blind spots. When something important lives there, *you* tell it and it logs it. It will **never fabricate** a "you owe a reply" from a notification it can't actually read.
