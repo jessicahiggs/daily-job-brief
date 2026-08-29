@@ -12,6 +12,30 @@ A [Claude Code](https://claude.com/claude-code) skill (+ optional nightly automa
   - **On demand** — invoke the skill in a Claude Code session ("update my job brief").
   - **Automated** — a nightly background run that writes the brief to a file you can watch with one command.
 
+## What it looks like
+
+At the end of each run it prints a short, forward-looking brief — only what needs you, what's
+upcoming, and what you're waiting on. A sample (illustrative — fictional companies and names):
+
+```text
+════════════════════════════════════════════
+  🔔 BRIEF — 2026-05-14 21:30
+════════════════════════════════════════════
+Needs you / upcoming:
+ • Tomorrow 10:00 AM — final-round panel with Northwind Labs (Growth PM). Prep: pull your
+   metrics-impact stories; they flagged experimentation depth in the screen.
+ • Reply owed to Dana Okafor (recruiter, Everline) — she asked for your availability the
+   week of the 8th; 2 days old.
+ • Brightwave take-home (product teardown) due Fri — ~2 hrs of work, not started yet.
+Awaiting (just watching, no action):
+ • Helio AI — waiting on the recruiter to confirm the hiring-manager screen after Monday's intro.
+ • Referral intro to the Cartographer team (via Sam Patel) — sent, no reply yet.
+Totals: 14 applications · 5 open · 3 rejected
+```
+
+Everything is action-only and time-aware: a call earlier today won't show as "upcoming," and
+rejections are never rehashed. If nothing needs you, it simply says so.
+
 ## What it deliberately does NOT do
 It only sees **email and calendar.** It cannot read **LinkedIn messages, WhatsApp, or application portals** — those are blind spots. When something important lives there, *you* tell it and it logs it. It will **never fabricate** a "you owe a reply" from a notification it can't actually read.
 
